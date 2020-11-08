@@ -123,11 +123,6 @@ function drawChart() {
 
 
 function playRound() {
-    if (round > 25) {
-        document.getElementById("btn").disabled = true;
-        alert(`Game over! You had ${formatter.format(getTotalDebt())} of debt left.`);
-        return;
-    }
 
     let spendingLimit = getRoundAmount();
     
@@ -176,6 +171,11 @@ function playRound() {
     }
     roundNumber.innerText = `Round Number: ${round}`;
     roundAmount.innerText = `Spending Limit: ${formatter.format(getRoundAmount())}`;
+    if (round > 25) {
+        document.getElementById("btn").disabled = true;
+        alert(`Game over! You had ${formatter.format(getTotalDebt())} of debt left.`);
+        return;
+    }
 }
 
 function getRoundAmount() {
