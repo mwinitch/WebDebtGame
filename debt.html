@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Management Game</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="debt.css">
+</head>
+<body onload="start()">
+    <div id="curve_chart" style="width: 98%; height: 28em; margin-top: 0px; margin: auto"></div>
+    <div id="group">
+        <div id="numbers">
+            <h3 id="roundNumber">Round Number:</h3>
+            <h3 id="roundAmount">Spending Amount:</h3>
+        </div>
+        <table id="table">
+            <tr>
+                <th>Account</th>
+                <th>Amount</th>
+                <th>Interest Rate</th>
+                <th>Interest Amount</th>
+                <th>Amount to Pay</th>
+            </tr>
+        </table>
+    </div>
+    <button id="btn" onclick="playRound()">Pay</button>
+    <script src="script.js"></script>
+</body>
+</html>

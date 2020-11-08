@@ -1,0 +1,68 @@
+* {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+}
+
+table {
+    margin-top: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.1em;
+}
+
+#tableHolder {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+#table {
+    margin-right: 100px;
+}
+
+
+td {
+    padding: 10px;
+}
+
+.tableID {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color:#ccebff;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input{
+    font-size: 1.2em;
+    font-family: "Times New Roman";
+}
+
+select {
+    font-size: 1.5em;
+}
+
+button {
+    margin: 10px auto 0px auto;
+    background-color: #e7e7e7;
+    border: 2px solid #e7e7e7;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+    display: block;
+    clear: left;
+
+}
+
+button:hover {
+    background-color: white;
+}
